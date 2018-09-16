@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h1> NGX Highlight Text Example</h1>
+<h3><u>case insensitive</u></h3>
+<div>
+    <div>
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Search here..." />
+    </div>
+    <p [innerHTML]="highlight()"></p>
+</div>
+
+<h3><u>case sensitive</u></h3>
+<div>
+    <div>
+        <input type="text" [(ngModel)]="searchTerm2" placeholder="Search here..." />
+    </div>
+    <p [innerHTML]="highlightSensitive()"></p>
+</div>
